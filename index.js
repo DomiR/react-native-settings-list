@@ -12,7 +12,8 @@ import {
   ScrollView,
   TextInput,
   Switch,
-  Image
+  Image,
+  ViewPropTypes,
 } from 'react-native';
 
 const ARROW_ICON = require('./img/icon-arrow-settings.png');
@@ -309,19 +310,19 @@ SettingsList.Item = createReactClass({
     /**
      * Item Box Style
      */
-    itemBoxStyle : View.propTypes.style,
+    itemBoxStyle : ViewPropTypes.style,
     /**
      * Title Box Style
      */
-    titleBoxStyle: View.propTypes.style,
+    titleBoxStyle: ViewPropTypes.style,
     /**
      * Right Side Style
      */
-    rightSideStyle: View.propTypes.style,
+    rightSideStyle: ViewPropTypes.style,
     /**
      * Editable Right Side Style
      */
-    editableTextStyle: View.propTypes.style,
+    editableTextStyle: ViewPropTypes.style,
 
     /**
      * Individual item width.  Can be globally set in the parent.  Will become deprecated
